@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play Trivia</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <h1>Let's Play some Trivia!!</h1>
+    <section>
+        <div class="science">
+            <h2>Science</h2>
+
+            <div class="question-container">
+
+                <div class="flip-card-1">
+                    <div class="flip-card-inner-1">
+                        <div class="flip-card-front-1">
+                            <img src="https://assets.materialup.com/uploads/ce06d064-eb25-4e6b-8b84-bc289a723ca8/preview.gif"
+                                alt="Avatar" style="width:180px;height:200px;">
+                            <h2>Questions #1 </h2>
+                            <p>What Gas makes the Fizzy drinks Bubbly ?</p>
+                        </div>
+                        <div class="flip-card-back-1">
+                            <h2>The Answer is : </h2>
+                            <p>Carbon Dioxide</p>
+                            <img src="data:image/png;base64,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"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/09/b0/08/09b008ceb45878eb34180d23506e4212.gif"
+                                alt="Question" style="width:180px;height:200px;">
+                            <h2>Questions #2 </h2>
+                            <p>Cumulus and stratus are types of what? </p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>Clouds</p>
+                            <img src="https://68.media.tumblr.com/4473826397d286134aadd294bd816af7/tumblr_ooxcw0Sfpj1vbdodoo1_1280.gif"
+                                alt="Co2" style="width:200px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/a8/fe/96/a8fe96a46f1db65d580b23ba929e55fb.gif"
+                                alt="Avatar" style="width:180px;height:200px;">
+                            <h2>Questions #3 </h2>
+                            <p>Does a smartphone emit enough radiation to melt three chocolate bars?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>False</p>
+                            <img src="https://media.tenor.com/images/b964f48a80f28d8edb39f37ece742611/tenor.gif"
+                                alt="Co2" style="width:200px;height:200px;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://thumbs.gfycat.com/AcademicUnrealisticGuppy-size_restricted.gif"
+                                alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #4 </h2>
+                            <p>How do you calculate density?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>Mass divided by Volume</p>
+                            <img src="https://cdn.dribbble.com/users/218217/screenshots/3610718/first_scene_blue_800x600_2_dribbble.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/09/b0/08/09b008ceb45878eb34180d23506e4212.gif"
+                                alt="Avatar" style="width:180px;height:200px;">
+                            <h2>Questions #5 </h2>
+                            <p>What could you also call a ‘lagomorph’? </p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>Rabbit</p>
+                            <img src="https://i.pinimg.com/originals/89/8a/77/898a77178781d222bce1683df306c75e.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://media1.tenor.com/images/42a9abb5ab9b2a6bc57ce08bc1ec061a/tenor.gif?itemid=14776592"
+                                alt="Avatar" style="width:180px;height:200px;">
+                            <h2>Questions #6 </h2>
+                            <p>Which is the smallest organ in human body?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p> Pineal gland </p>
+                            <img src="https://cdn.dribbble.com/users/2555721/screenshots/5616952/007-brain-lightbulb-dribbble.gif"
+                                alt="Co2" style="width:200px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="blanks">
+        <h2>Scrambled Words</h2>
+        <p>Lets see if you can solve these mixed up words :D</p>
+        <p>
+            1. CSPYHIS <br>
+            2. BRATECIA <br>
+            3. RCABNO <br>
+            4. RETHAWE <br>
+            5. LTHGI <br>
+        </p>
+    </div>
+    <hr>
+    <section>
+        <div class="maths">
+            <h2>Maths</h2>
+
+            <div class="question-container">
+
+                <div class="flip-card-1">
+                    <div class="flip-card-inner-1">
+                        <div class="flip-card-front-1">
+                            <img src="https://thumbs.gfycat.com/ZestyMatureCarp-size_restricted.gif" alt="Avatar"
+                                style="width:180px;height:200px;">
+                            <h2>Questions #1 </h2>
+                            <p>Who invented algebra? (Full name required)</p>
+                        </div>
+                        <div class="flip-card-back-1">
+                            <h2>The Answer is : </h2>
+                            <p>Muhammad ibn Musa al-Khwarizmi </p>
+                            <img src="https://format-com-cld-res.cloudinary.com/image/private/s--xppMZ1AD--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/abc5c77cb3dc2cd597f157d1e871d6e2/Iveta_Karpathyova_studio_Wahed_animator_animation_creative_illustrator_illustration_2d_handdrawn_rotoscope_rotoscoping_hand_drawn_san_francisco_toronto_Muhammad_ibn_Musa_al-Khwarizmi.gif"
+                                alt="Co2" style="width:200px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Math_-_Idil_Keysan_-_Wikimedia_Giphy_stickers_2019.gif"
+                                alt="Question" style="width:180px;height:200px;">
+                            <h2>Questions #2 </h2>
+                            <p> Who invented math? </p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>Ancient Greeks</p>
+                            <img src="https://i.pinimg.com/originals/2c/41/db/2c41db6c1b09c71596a65a9520eef0f4.gif"
+                                alt="Co2" style="width:200px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/e8/58/17/e85817b45f1bf9cf531b5fe3e7edca4e.gif"
+                                alt="Avatar" style="width:180px;height:200px;">
+                            <h2>Questions #3 </h2>
+                            <p>Who invented Geometry?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>Euclid</p>
+                            <img src="https://images.gr-assets.com/authors/1428310563p5/125792.jpg" alt="Co2"
+                                style="width:150px;height:180px;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/09/b0/08/09b008ceb45878eb34180d23506e4212.gif"
+                                alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #4 </h2>
+                            <p>(True or False) ((2^2)^3) = 25.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>
+                                FALSE (2^6) <br>
+
+                            </p>
+                            <img src="https://media.tenor.com/images/b964f48a80f28d8edb39f37ece742611/tenor.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/09/b0/08/09b008ceb45878eb34180d23506e4212.gif"
+                                alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #5 </h2>
+                            <p>(True or False) The product of two positive numbers is NOT positive.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>FALSE (positive * positive = positive)</p>
+                            <img src="https://media.tenor.com/images/b964f48a80f28d8edb39f37ece742611/tenor.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/09/b0/08/09b008ceb45878eb34180d23506e4212.gif"
+                                alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #6 </h2>
+                            <p>(True or False) -23 = (-2)3. </p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p> TRUE </p>
+                            <img src="https://thumbs.gfycat.com/HarshAdolescentAsianconstablebutterfly-small.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="blanks">
+        <h2>Scrambled Words</h2>
+        <p>Lets see if you can solve these mixed up words :D</p>
+        <p>
+            1. egmyeotr <br>
+            2. apjan <br>
+            3. glbaear <br>
+            4. raeblavi <br>
+            5. mcsopsa <br>
+        </p>
+    </div>
+    <!--- Social Science   -->
+
+
+    <hr>
+    <section>
+        <div class="social-science">
+            <h2>Social Studies</h2>
+
+            <div class="question-container">
+
+                <div class="flip-card-1">
+                    <div class="flip-card-inner-1">
+                        <div class="flip-card-front-1">
+                            <img src="https://media1.giphy.com/media/9uISnaQiSGAtqjBSw8/source.gif" alt="Avatar"
+                                style="width:180px;height:150px;">
+                            <h2>Questions #1 </h2>
+                            <p>Which were the countries who were part of the allied powers and the axis powers during
+                                WW2?
+                            </p>
+                        </div>
+                        <div class="flip-card-back-1">
+                            <h2>The Answer is : </h2>
+                            <p>Allied powers : (Germany, Italy, Japan, Hungary, Romania, Bulgaria) <br>
+                                Axis Powers : (U.S, Britain, France, USSR, Australia, Belgium, Brazil, Canada and a few
+                                others)
+                            </p>
+                            <img src="https://i.pinimg.com/originals/d3/38/3d/d3383deb116fa51b872df1debfcd4043.gif"
+                                alt="Co2" style="width:180px;height:150px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/c2/bd/63/c2bd637e12918331fdca95759fe38cfe.gif"
+                                alt="Question" style="width:180px;height:150px;">
+                            <h2>Questions #2 </h2>
+                            <p> Which was the first sattelite launched by India for Space science and Exploration
+                                Purposes?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p> AstroSat </p>
+                            <img src="https://i.pinimg.com/originals/93/50/55/935055c542ec90cd73007a64f4e898d9.gif"
+                                alt="Co2" style="width:180px;height:150px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" id="myDIV">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://data.whicdn.com/images/220656833/original.gif" alt="Avatar"
+                                style="width:180px;height:150px;">
+                            <h2>Questions #3 </h2>
+                            <p>Which Ocean is Mariana Trench located ?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>Pacific Ocean</p>
+                            <img src="https://media3.giphy.com/media/dgSwA5GRuNpN6/giphy.gif" alt="Co2"
+                                style="width:180px;height:200px;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/933804400183708747/9B6121BEC51002C0F27902FFB1A1C7FAC5809FC5/"
+                                alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #4 </h2>
+                            <p>Where is Jamaica located exactly?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>
+                                Carrabian Sea, North America <br>
+
+                            </p>
+                            <img src="https://i.pinimg.com/originals/02/5f/29/025f29a640db04a067d7a540a7b4d004.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.gifer.com/W8Bs.gif" alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #5 </h2>
+                            <p> The people of India are given complete authority by the Indian _____
+                            </p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p> Constitution </p>
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7afc7033626999.56b1f49ba1476.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/7e/2b/a1/7e2ba1706736998663cc5e35a5a4722b.gif"
+                                alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #6 </h2>
+                            <p>India has the __ largest road network in the world.. </p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p> 2nd </p>
+                            <img src="https://i.pinimg.com/originals/e7/42/7b/e7427b6494b6800ac9b89d1246abc60f.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="english">
+            <hr>
+            <h2>English</h2>
+
+            <div class="question-container">
+
+                <div class="flip-card-1">
+                    <div class="flip-card-inner-1">
+                        <div class="flip-card-front-1">
+                            <img src="https://as2.ftcdn.net/jpg/01/43/82/65/500_F_143826579_FR1DX5CQqa6q6Q4QwcLH43tBy2KThB1m.jpg"
+                                alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #1 </h2>
+                            <p> Who created the English alphabet?
+                            </p>
+                        </div>
+                        <div class="flip-card-back-1">
+                            <h2>The Answer is : </h2>
+                            <p> The Phonesians</p>
+                            <img src="https://i.pinimg.com/originals/d3/38/3d/d3383deb116fa51b872df1debfcd4043.gif"
+                                alt="Co2" style="width:180px;height:150px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://i.pinimg.com/originals/54/98/88/549888805ac40cb67a3bb7ab6a4024ea.gif"
+                                alt="Question" style="width:180px;height:150px;">
+                            <h2>Questions #2 </h2>
+                            <p> How many words are there in the english Language?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p> Trick Question! It's uncountable :D </p>
+                            <img src="https://media1.tenor.com/images/eb5e6ff7cc9fa14b3f8d206a26dc6f82/tenor.gif?itemid=14670020"
+                                alt="Co2" style="width:180px;height:150px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://media2.giphy.com/media/WwMHQqMG0yirepFPP8/giphy.gif" alt="Avatar"
+                                style="width:180px;height:150px;">
+                            <h2>Questions #3 </h2>
+                            <p>What is the Plural of Octopus, Hippopotamus, Syllabus ?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p>octopi, octopuses, and octopodes.. But correct form is octopuses, hippopotamuses or
+                                hippopotami, Syllabi</p>
+                            <img src="https://cdn.dribbble.com/users/203287/screenshots/7091371/media/c9cdc5486603553a0e3f405e5b6e4513.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://acegif.com/wp-content/uploads/globe.gif" alt="Avatar"
+                                style="width:180px;height:150px;">
+                            <h2>Questions #4 </h2>
+                            <p> Which country contains the largest English-speaking population in the world? <br>
+
+                                (a) United States <br>
+
+                                (b) India <br>
+
+                            </p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p> India </p>
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7afc7033626999.56b1f49ba1476.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Avatar" style="width:180px;height:150px;">
+                            <h2>Questions #5 </h2>
+                            <p>Which of the following is probably the most widely used English word throughout the
+                                world? <br>
+
+                                (a) okay <br>
+                                (b) Internet <br>
+
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>The Answer is : </h2>
+                            <p> Okay </p>
+                            <img src="https://media.tenor.com/images/d39006b4093d755a9e0d777e7908274e/tenor.gif"
+                                alt="Co2" style="width:180px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="blanks">
+        <h2>Scrambled Words</h2>
+        <p>Lets see if you can solve these mixed up words :D</p>
+        <p>
+            1.mrrwloi iwswhaodlt <br>
+            2.kplhisiaslr emawaee <br>
+            3.orttbsfr roe <br>
+            4.urodnkn ibs <br>
+            5.tkgeen hnsip <br>
+        </p>
+    </div>
+
+    <link rel="stylesheet" href="game.js">
+</body>
+
+</html>
